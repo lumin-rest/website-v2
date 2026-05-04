@@ -7,4 +7,5 @@ export const gamesList = [
   "Grace",
   "Murder Mystery 2",
   "RIVALS",
+  "Slime RNG",
 ];

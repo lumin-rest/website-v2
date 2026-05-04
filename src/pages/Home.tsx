@@ -97,6 +97,14 @@ const supportedGames: SupportedGame[] = [
     placeId: 17625359962,
     rscriptsUrl: "https://rscripts.net/script/1-skin-changer-and-spoofer-or-yabujin-free-or-op-new-2026-TipP",
   },
+  {
+    title: "Slime RNG",
+    mappingName: "Slime RNG",
+    image:
+      "https://tr.rbxcdn.com/180DAY-34da06903c3233f12c9ca8a11f996348/768/432/Image/Webp/noFilter",
+    placeId: 92416421522960,
+    rscriptsUrl: "https://rscripts.net/script/new-best-op-script-or-auto-upgrade-auto-rebirth-and-more-ntQq",
+  },
 ];
 
 const supportedGameHeadings = supportedGames.map(
