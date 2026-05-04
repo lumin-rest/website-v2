@@ -52,6 +52,7 @@ const supportedGames: SupportedGame[] = [
     placeId: 107095834793267,
     url: "https://www.roblox.com/games/107095834793267/Oil-Empire",
     rscriptsUrl: "https://rscripts.net/script/25-features-or-auto-expand-auto-drill-and-refinery-and-more-gZyu",
+    scriptbloxUrl: "https://scriptblox.com/script/Oil-Empire-25-features-Auto-Expand-Auto-Drill-Refinery-and-more-212295",
   },
   {
     title: "99 Nights In The Forest",
