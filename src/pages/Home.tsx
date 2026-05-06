@@ -97,6 +97,7 @@ const supportedGames: SupportedGame[] = [
       "https://tr.rbxcdn.com/180DAY-c66296c3f8c6e16eb6f6eecca67c4710/768/432/Image/Webp/noFilter",
     placeId: 17625359962,
     rscriptsUrl: "https://rscripts.net/script/1-skin-changer-and-spoofer-or-yabujin-free-or-op-new-2026-TipP",
+    scriptbloxUrl: "https://scriptblox.com/script/RIVALS-BEST-SKIN-CHANGER-AND-SPOOFER-YABUJIN-FREE-OP-NEW-2026-212946",
   },
   {
     title: "Slime RNG",
