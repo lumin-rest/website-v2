@@ -8,4 +8,5 @@ export const gamesList = [
   "Murder Mystery 2",
   "RIVALS",
   "Slime RNG",
+  "Rusty Rafts",
 ];

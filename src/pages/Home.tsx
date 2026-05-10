@@ -107,6 +107,15 @@ const supportedGames: SupportedGame[] = [
     placeId: 92416421522960,
     rscriptsUrl: "https://rscripts.net/script/new-best-op-script-or-auto-upgrade-auto-rebirth-and-more-ntQq",
   },
+  {
+    title: "Rusty Rafts",
+    mappingName: "Rusty Rafts",
+    image:
+      "https://tr.rbxcdn.com/180DAY-71468750c191d5d4020c43add8c3693c/768/432/Image/Webp/noFilter",
+    placeId: 140477643689375,
+    rscriptsUrl: "https://rscripts.net/script/55-features-or-auto-bandage-auto-armor-auto-kill-and-more-PA5c",
+    scriptbloxUrl: "https://scriptblox.com/script/Rusty-Rafts-55-features-Auto-Bandage-Auto-Armor-Auto-Kill-and-more-213785",
+  },
 ];
 
 const supportedGameHeadings = supportedGames.map(
