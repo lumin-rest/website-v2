@@ -93,7 +93,7 @@ export default function Key() {
                     className="w-full"
                   >
                     <Button variant="outline" className="w-full cursor-pointer">
-                      Linkvertise
+                      Linkvertise (1)
                       <ExternalLinkIcon className="ml-2 h-4 w-4" />
                     </Button>
                   </a>
@@ -104,7 +104,7 @@ export default function Key() {
                     className="w-full"
                   >
                     <Button variant="outline" className="w-full cursor-pointer">
-                      Work.ink
+                      Work.ink (2)
                       <ExternalLinkIcon className="ml-2 h-4 w-4" />
                     </Button>
                   </a>
