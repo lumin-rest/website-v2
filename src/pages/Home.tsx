@@ -106,6 +106,7 @@ const supportedGames: SupportedGame[] = [
       "https://tr.rbxcdn.com/180DAY-34da06903c3233f12c9ca8a11f996348/768/432/Image/Webp/noFilter",
     placeId: 92416421522960,
     rscriptsUrl: "https://rscripts.net/script/new-best-op-script-or-auto-upgrade-auto-rebirth-and-more-ntQq",
+    scriptbloxUrl: "https://scriptblox.com/script/Slime-RNG-NEW-BEST-OP-SCRIPT-Auto-Upgrade-Auto-Rebirth-and-more-214141",
   },
   {
     title: "Rusty Rafts",
