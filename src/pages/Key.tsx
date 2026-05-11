@@ -85,15 +85,26 @@ export default function Key() {
                     <Perk>No payment required</Perk>
                   </ul>
                 </CardContent>
-                <CardFooter>
+                <CardFooter className="flex-col gap-2">
                   <a
-                    href="https://ads.luarmor.net/get_key?for=Lumin_Key-TwwkQkvyGEEn"
+                    href="https://ads.luarmor.net/get_key?for=Lumin_Key_through_Linkvertise-xolgGwXyQoMy"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full"
                   >
                     <Button variant="outline" className="w-full cursor-pointer">
-                      Get Free Key
+                      Linkvertise
+                      <ExternalLinkIcon className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
+                  <a
+                    href="https://ads.luarmor.net/get_key?for=Lumin_Key_through_Workink-TwwkQkvyGEEn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full"
+                  >
+                    <Button variant="outline" className="w-full cursor-pointer">
+                      Work.ink
                       <ExternalLinkIcon className="ml-2 h-4 w-4" />
                     </Button>
                   </a>
