@@ -145,6 +145,14 @@ export default function Key() {
                       <ExternalLinkIcon className="ml-2 h-4 w-4" />
                     </Button>
                   </a>
+                  <a
+                    href="/key/robux/"
+                    className="w-full"
+                  >
+                    <Button variant="outline" className="w-full cursor-pointer">
+                      Buy with Robux
+                    </Button>
+                  </a>
                 </CardFooter>
               </Card>
             </BlurFade>
