@@ -57,9 +57,9 @@ function injectMeta(html, { title, description, keywords, url, image }) {
     `<meta name="twitter:image:alt" content="lumin.rest logo" />`,
   ].join("\n    ");
 
-  // Strip all existing meta/title/link tags from <head> then inject fresh set
+  // Strip all existing meta/title tags then inject a single fresh set
   return html
-    .replace(/<title>[^<]*<\/title>/, `<title>${title}</title>`)
+    .replace(/<title>[^<]*<\/title>/g, "")
     .replace(/<meta name="description"[^>]*\/>/g, "")
     .replace(/<meta name="keywords"[^>]*\/>/g, "")
     .replace(/<meta name="author"[^>]*\/>/g, "")
@@ -68,7 +68,7 @@ function injectMeta(html, { title, description, keywords, url, image }) {
     .replace(/<link rel="canonical"[^>]*\/>/g, "")
     .replace(/<meta property="og:[^>]*\/>/g, "")
     .replace(/<meta name="twitter:[^>]*\/>/g, "")
-    .replace("</head>", `    ${metaTags}\n  </head>`);
+    .replace("</head>", `    <title>${title}</title>\n    ${metaTags}\n  </head>`);
 }
 
 async function main() {
