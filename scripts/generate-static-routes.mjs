@@ -22,13 +22,19 @@ const routeMeta = {
     url: "https://lumin.rest/key/",
     image: "https://lumin.rest/icon.png",
   },
+  "key/robux": {
+    title: "Buy with Robux - lumin.rest",
+    description: "Purchase lumin.rest access using Robux on the Roblox catalog.",
+    keywords: "lumin.rest robux, buy lumin robux, roblox catalog lumin",
+    url: "https://lumin.rest/key/robux/",
+    image: "https://lumin.rest/icon.png",
+  },
 };
 
 const defaultRoutes = ["privacy", "tos", "milenium-preview"];
 
 function injectMeta(html, { title, description, keywords, url, image }) {
   const metaTags = [
-    `<title>${title}</title>`,
     `<meta name="description" content="${description}" />`,
     `<meta name="keywords" content="${keywords}" />`,
     `<meta name="author" content="lumin.rest" />`,
