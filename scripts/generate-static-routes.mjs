@@ -46,28 +46,28 @@ function injectMeta(html, { title, description, keywords, url, image }) {
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" href="/icon.png" />
     <link rel="apple-touch-icon" href="/icon.png" />
-    <title>${title}</title>
+    <title data-rh="true">${title}</title>
     ${assetTags}
-    <meta name="description" content="${description}" />
-    <meta name="keywords" content="${keywords}" />
-    <meta name="author" content="lumin.rest" />
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#f8bfd4" />
-    <link rel="canonical" href="${url}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="${url}" />
-    <meta property="og:site_name" content="lumin.rest" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:title" content="${title}" />
-    <meta property="og:description" content="${description}" />
-    <meta property="og:image" content="${image}" />
-    <meta property="og:image:alt" content="lumin.rest logo" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="${url}" />
-    <meta name="twitter:title" content="${title}" />
-    <meta name="twitter:description" content="${description}" />
-    <meta name="twitter:image" content="${image}" />
-    <meta name="twitter:image:alt" content="lumin.rest logo" />
+    <meta data-rh="true" name="description" content="${description}" />
+    <meta data-rh="true" name="keywords" content="${keywords}" />
+    <meta data-rh="true" name="author" content="lumin.rest" />
+    <meta data-rh="true" name="robots" content="index, follow" />
+    <meta data-rh="true" name="theme-color" content="#f8bfd4" />
+    <link data-rh="true" rel="canonical" href="${url}" />
+    <meta data-rh="true" property="og:type" content="website" />
+    <meta data-rh="true" property="og:url" content="${url}" />
+    <meta data-rh="true" property="og:site_name" content="lumin.rest" />
+    <meta data-rh="true" property="og:locale" content="en_US" />
+    <meta data-rh="true" property="og:title" content="${title}" />
+    <meta data-rh="true" property="og:description" content="${description}" />
+    <meta data-rh="true" property="og:image" content="${image}" />
+    <meta data-rh="true" property="og:image:alt" content="lumin.rest logo" />
+    <meta data-rh="true" name="twitter:card" content="summary_large_image" />
+    <meta data-rh="true" name="twitter:url" content="${url}" />
+    <meta data-rh="true" name="twitter:title" content="${title}" />
+    <meta data-rh="true" name="twitter:description" content="${description}" />
+    <meta data-rh="true" name="twitter:image" content="${image}" />
+    <meta data-rh="true" name="twitter:image:alt" content="lumin.rest logo" />
   </head>`;
 
   return html.replace(/<head>[\s\S]*?<\/head>/, newHead);

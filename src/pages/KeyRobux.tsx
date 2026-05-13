@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet-async";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import DotPattern from "@/components/magicui/dot-pattern";
 import { Button } from "@/components/ui/button";
@@ -16,25 +15,6 @@ import { ExternalLinkIcon } from "lucide-react";
 export default function KeyRobux() {
   return (
     <main className="overflow-x-hidden">
-      <Helmet>
-        <title>Buy with Robux - lumin.rest</title>
-        <meta name="description" content="Purchase lumin.rest access using Robux on the Roblox catalog." />
-        <meta name="robots" content="index, follow" />
-        <meta name="theme-color" content="#f8bfd4" />
-        <link rel="canonical" href="https://lumin.rest/key/robux/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://lumin.rest/key/robux/" />
-        <meta property="og:site_name" content="lumin.rest" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:title" content="Buy with Robux - lumin.rest" />
-        <meta property="og:description" content="Purchase lumin.rest access using Robux on the Roblox catalog." />
-        <meta property="og:image" content="https://lumin.rest/icon.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://lumin.rest/key/robux/" />
-        <meta name="twitter:title" content="Buy with Robux - lumin.rest" />
-        <meta name="twitter:description" content="Purchase lumin.rest access using Robux on the Roblox catalog." />
-        <meta name="twitter:image" content="https://lumin.rest/icon.png" />
-      </Helmet>
       <DotPattern
         width={20}
         height={20}
