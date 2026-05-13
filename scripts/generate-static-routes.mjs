@@ -34,41 +34,43 @@ const routeMeta = {
 const defaultRoutes = ["privacy", "tos", "milenium-preview"];
 
 function injectMeta(html, { title, description, keywords, url, image }) {
-  const metaTags = [
-    `<meta name="description" content="${description}" />`,
-    `<meta name="keywords" content="${keywords}" />`,
-    `<meta name="author" content="lumin.rest" />`,
-    `<meta name="robots" content="index, follow" />`,
-    `<meta name="theme-color" content="#f8bfd4" />`,
-    `<link rel="canonical" href="${url}" />`,
-    `<meta property="og:type" content="website" />`,
-    `<meta property="og:url" content="${url}" />`,
-    `<meta property="og:site_name" content="lumin.rest" />`,
-    `<meta property="og:locale" content="en_US" />`,
-    `<meta property="og:title" content="${title}" />`,
-    `<meta property="og:description" content="${description}" />`,
-    `<meta property="og:image" content="${image}" />`,
-    `<meta property="og:image:alt" content="lumin.rest logo" />`,
-    `<meta name="twitter:card" content="summary_large_image" />`,
-    `<meta name="twitter:url" content="${url}" />`,
-    `<meta name="twitter:title" content="${title}" />`,
-    `<meta name="twitter:description" content="${description}" />`,
-    `<meta name="twitter:image" content="${image}" />`,
-    `<meta name="twitter:image:alt" content="lumin.rest logo" />`,
-  ].join("\n    ");
+  // Extract vite-injected asset tags (script modules + stylesheet links)
+  const assetTags = (
+    html.match(/<script[^>]*crossorigin[^>]*><\/script>|<link[^>]*crossorigin[^>]*>/g) || []
+  ).join("\n    ");
 
-  // Strip all existing meta/title tags then inject a single fresh set
-  return html
-    .replace(/<title>[^<]*<\/title>/g, "")
-    .replace(/<meta name="description"[^>]*\/>/g, "")
-    .replace(/<meta name="keywords"[^>]*\/>/g, "")
-    .replace(/<meta name="author"[^>]*\/>/g, "")
-    .replace(/<meta name="robots"[^>]*\/>/g, "")
-    .replace(/<meta name="theme-color"[^>]*\/>/g, "")
-    .replace(/<link rel="canonical"[^>]*\/>/g, "")
-    .replace(/<meta property="og:[^>]*\/>/g, "")
-    .replace(/<meta name="twitter:[^>]*\/>/g, "")
-    .replace("</head>", `    <title>${title}</title>\n    ${metaTags}\n  </head>`);
+  const newHead = `<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <link rel="apple-touch-icon" href="/icon.png" />
+    <title>${title}</title>
+    ${assetTags}
+    <meta name="description" content="${description}" />
+    <meta name="keywords" content="${keywords}" />
+    <meta name="author" content="lumin.rest" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f8bfd4" />
+    <link rel="canonical" href="${url}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="${url}" />
+    <meta property="og:site_name" content="lumin.rest" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="${title}" />
+    <meta property="og:description" content="${description}" />
+    <meta property="og:image" content="${image}" />
+    <meta property="og:image:alt" content="lumin.rest logo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="${url}" />
+    <meta name="twitter:title" content="${title}" />
+    <meta name="twitter:description" content="${description}" />
+    <meta name="twitter:image" content="${image}" />
+    <meta name="twitter:image:alt" content="lumin.rest logo" />
+  </head>`;
+
+  return html.replace(/<head>[\s\S]*?<\/head>/, newHead);
 }
 
 async function main() {
