@@ -7,6 +7,7 @@ import "./app/globals.css";
 import Home from "./pages/Home";
 import Key from "./pages/Key";
 import KeyRobux from "./pages/KeyRobux";
+import Script from "./pages/Script";
 
 const routerBaseName = import.meta.env.BASE_URL;
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/key/" element={<Key />} />
         <Route path="/key/robux/" element={<KeyRobux />} />
+        <Route path="/script" element={<Script />} />
       </Routes>
       <Toaster richColors />
     </BrowserRouter>
