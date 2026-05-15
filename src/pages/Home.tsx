@@ -317,13 +317,20 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <p className="text-muted-foreground text-xs px-2 py-2 text-right max-md:text-center max-md:mt-5">
-            This software is not affiliated, associated, authorized, endorsed
-            by, or
-            <br />
-            in any way officially connected with Roblox or any of its
-            subsidiaries or its affiliates.
-          </p>
+          <div className="flex flex-col items-end gap-1 max-md:items-center max-md:mt-5">
+            <p className="text-muted-foreground text-xs px-2 text-right max-md:text-center">
+              This software is not affiliated, associated, authorized, endorsed
+              by, or
+              <br />
+              in any way officially connected with Roblox or any of its
+              subsidiaries or its affiliates.
+            </p>
+            <p className="text-muted-foreground text-xs px-2">
+              <a href="https://vaultcord.win/lumin" target="_blank" rel="noreferrer" className="underline underline-offset-2">Discord</a>
+              {" · "}
+              <a href="https://luminrest.mysellauth.com/sitemap.xml" target="_blank" rel="noreferrer" className="underline underline-offset-2">Store sitemap</a>
+            </p>
+          </div>
         </div>
       </main>
     </>
