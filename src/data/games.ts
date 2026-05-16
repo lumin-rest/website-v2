@@ -9,4 +9,5 @@ export const gamesList = [
   "RIVALS",
   "Slime RNG",
   "Rusty Rafts",
+  "Sound Space",
 ];

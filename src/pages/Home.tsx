@@ -116,6 +116,15 @@ const supportedGames: SupportedGame[] = [
     rscriptsUrl: "https://rscripts.net/script/55-features-or-auto-bandage-auto-armor-auto-kill-and-more-PA5c",
     scriptbloxUrl: "https://scriptblox.com/script/Rusty-Rafts-55-features-Auto-Bandage-Auto-Armor-Auto-Kill-and-more-213785",
   },
+  {
+    title: "Sound Space",
+    mappingName: "Sound Space",
+    image:
+      "https://tr.rbxcdn.com/180DAY-aba75e339f358812df7659a6daf40ce2/768/432/Image/Webp/noFilter",
+    placeId: 2677609345,
+    rscriptsUrl: "https://rscripts.net/script/1-hub-or-auto-player-anti-miss-no-fail-and-more-DqAO",
+    scriptbloxUrl: "https://scriptblox.com/script/Songs!-Sound-Space-Rhythm-Game-NUM1-HUB-Auto-Player-Anti-Miss-No-Fail-and-more-216682",
+  },
 ];
 
 const supportedGameHeadings = supportedGames.map(
