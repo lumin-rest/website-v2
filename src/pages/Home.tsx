@@ -314,15 +314,7 @@ export default function Home() {
                 <span className="text-[#f8bfd4]">lumin</span>.rest
               </p>
               <p className="text-muted-foreground text-xs">
-                Stolen from{" "}
-                <a
-                  href="https://rscripts.net/@luminrest"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="underline underline-offset-2"
-                >
-                  mspaint.cc (we followed the license btw)
-                </a>
+                Stolen from mspaint.cc (we followed the license btw)
               </p>
             </div>
           </div>
