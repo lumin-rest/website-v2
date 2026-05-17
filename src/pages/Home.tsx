@@ -61,6 +61,7 @@ const supportedGames: SupportedGame[] = [
     placeId: 79546208627805,
     url: "https://www.roblox.com/games/79546208627805/99-Nights-in-the-Forest",
     rscriptsUrl: "https://rscripts.net/script/20-features-or-godmode-bring-all-items-grab-kids-and-more-MqMZ",
+    scriptbloxUrl: "https://scriptblox.com/script/99-Nights-in-the-Forest-20-features-Godmode-Grab-Kids-Bring-All-Items-and-more-217602",
   },
   {
     title: "Build A Boat For Treasure",
