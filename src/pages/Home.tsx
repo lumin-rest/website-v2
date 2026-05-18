@@ -242,7 +242,7 @@ export default function Home() {
               <Executor
                 name="Potassium"
                 image="https://github.com/user-attachments/assets/e69883e2-2b73-4c72-89a1-1f5ee29525d8"
-                url="https://potassium.pro/"
+                url="https://docs.potassium.pro/"
               />
               <Executor
                 name="Seliware"
